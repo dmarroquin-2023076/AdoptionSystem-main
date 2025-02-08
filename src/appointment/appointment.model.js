@@ -1,4 +1,4 @@
-import { Schema, model } from "mongoose";
+import { Schema, model } from 'mongoose'
 
 const appointmentSchema = Schema(
     {
@@ -23,7 +23,7 @@ const appointmentSchema = Schema(
             required: [true, 'Client is required'],
         }
     },
-);
+)
 
 
-export default model('Appointment', appointmentSchema);
+export default model('Appointment', appointmentSchema)

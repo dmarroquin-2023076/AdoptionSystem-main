@@ -16,7 +16,7 @@ const api = Router()
 api.get('/', validateJwt, getAll)
 api.get('/:id',validateJwt,  get)
 api.put('/:id',validateJwt, updateUserValidator, update)
-api.put('/pass/:id', validateJwt, updatePassword);
+api.put('/pass/:id', validateJwt, updatePassword)
 
 
 export default api

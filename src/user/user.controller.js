@@ -121,7 +121,7 @@ export const updatePassword = async (req, res) => {
             return res.status(404).send({
                 success: false,
                 message: 'User  not found'
-            });
+            })
         }
 
         // Verificar la contraseña antigua
@@ -129,7 +129,7 @@ export const updatePassword = async (req, res) => {
             return res.status(400).send({
                 success: false,
                 message: 'Old password is incorrect'
-            });
+            })
         }
 
         // Encriptar la nueva contraseña
@@ -140,8 +140,8 @@ export const updatePassword = async (req, res) => {
             success: true,
             message: 'Password updated successfully',
             user: updatedUser   
-        });
-
+        }
+    )
     } catch (err) {
         console.error(err)
         return res.status(500).send({ message: 'General error with update password function', err })

@@ -54,5 +54,3 @@ export const updateUserValidator =[
         .custom(notRequiredField),
         validateErrorsWithoutFiles
 ]
-
-

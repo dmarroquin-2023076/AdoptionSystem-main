@@ -1,12 +1,12 @@
-import { Router } from "express";
+import { Router } from "express"
 import {
   aggAppointment,
-} from "./appointment.controller.js";
-import { validateJwt } from "../../middlewares/validate.jwt.js";
+} from "./appointment.controller.js"
+import { validateJwt } from "../../middlewares/validate.jwt.js"
 
-const api = Router();
+const api = Router()
 
-api.post("/", validateJwt, aggAppointment);
+api.post("/", validateJwt, aggAppointment)
 
 
-export default api;
+export default api
