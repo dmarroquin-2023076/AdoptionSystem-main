@@ -1,0 +1,611 @@
+{
+	"info": {
+		"_postman_id": "9ee54f5e-ec1b-43db-a918-6e025c1c2e84",
+		"name": "SystemAnimal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37956984"
+	},
+	"item": [
+		{
+			"name": "Animal",
+			"item": [
+				{
+					"name": "BuscarAnimal",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2636/v1/animal/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"v1",
+								"animal",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AgregarAnimal",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "All",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Tiene una cita cada dos dias ",
+									"type": "text"
+								},
+								{
+									"key": "age",
+									"value": "12",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "domestico",
+									"type": "text"
+								},
+								{
+									"key": "keeper",
+									"value": "67a6d9223c0b76d975e8c129",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:2636/v1/animal",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"v1",
+								"animal"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Animal",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "all",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "perro",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "age",
+									"value": "12",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "category",
+									"value": "domestico",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "keeper",
+									"value": "67a663db157a5fd7ed76d49e",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:2636/v1/animal/67a6deff7652a8369f263914",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"v1",
+								"animal",
+								"67a6deff7652a8369f263914"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BuscarAnimalId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2636/v1/animal/67a6deff7652a8369f263914",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"v1",
+								"animal",
+								"67a6deff7652a8369f263914"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EliminarAnimal",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "alfredo",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "perro",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "age",
+									"value": "12",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "category",
+									"value": "domestico",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "keeper",
+									"value": "67a663db157a5fd7ed76d49e",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:2636/v1/animal/67a6deff7652a8369f263914",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"v1",
+								"animal",
+								"67a6deff7652a8369f263914"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "userLoggin",
+									"value": "100@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1789ASD/m",
+									"type": "text"
+								},
+								{
+									"key": "age",
+									"value": "10",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "type",
+									"value": "domestico",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "keeper",
+									"value": "679c60ea40620b573fa740a5",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:2636/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"login"
+							],
+							"query": [
+								{
+									"key": "userLoggin",
+									"value": "parmas10",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "1789ASD/m",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "name",
+								"value": "diego",
+								"type": "text"
+							},
+							{
+								"key": "surname",
+								"value": "franco",
+								"type": "text"
+							},
+							{
+								"key": "username",
+								"value": "afranco1",
+								"type": "text"
+							},
+							{
+								"key": "email",
+								"value": "franco@gmail.com",
+								"type": "text"
+							},
+							{
+								"key": "password",
+								"value": "123A456",
+								"type": "text"
+							},
+							{
+								"key": "phone",
+								"value": "49416628",
+								"type": "text"
+							},
+							{
+								"key": "profilePicture",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "diego",
+									"type": "text"
+								},
+								{
+									"key": "surname",
+									"value": "franco",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "all1",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "100@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1789ASD/m",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "41662867",
+									"type": "text"
+								},
+								{
+									"key": "profilePicture",
+									"type": "file",
+									"src": "/C:/Users/franc/Downloads/B1-BIO-CAP.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:2636/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BuscarIdUser",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2E2ZTJkOWVmMDI2Y2E4ZjNiMjdmMGYiLCJ1c2VybmFtZSI6ImFsbDEiLCJuYW1lIjoiZGllZ28iLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNzM4OTkwMzE3LCJleHAiOjE3MzkwMDExMTd9.9xfQg7xpGpokoKSIwHtqoxQO-Vd4lFHEWLFb52Gq5e8",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:2636/v1/user/67a6e2d9ef026ca8f3b27f0f",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"v1",
+								"user",
+								"67a6e2d9ef026ca8f3b27f0f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListarUser",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2E2ZTJkOWVmMDI2Y2E4ZjNiMjdmMGYiLCJ1c2VybmFtZSI6ImFsbDEiLCJuYW1lIjoiZGllZ28iLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNzM4OTkwMzE3LCJleHAiOjE3MzkwMDExMTd9.9xfQg7xpGpokoKSIwHtqoxQO-Vd4lFHEWLFb52Gq5e8",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:2636/v1/user/",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"v1",
+								"user",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Test",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2E2ZTJkOWVmMDI2Y2E4ZjNiMjdmMGYiLCJ1c2VybmFtZSI6ImFsbDEiLCJuYW1lIjoiZGllZ28iLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNzM4OTkwMzE3LCJleHAiOjE3MzkwMDExMTd9.9xfQg7xpGpokoKSIwHtqoxQO-Vd4lFHEWLFb52Gq5e8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "Authorization",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NzliZTUwOWE1NWFlYWFlMzdkNTY3MjUiLCJ1c2VybmFtZSI6ImFsb3BleiIsIm5hbWUiOiJhbGZyZWRvIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzM4MzUyMTEwLCJleHAiOjE3MzgzNjI5MTB9.wrKDaSf_OkWYWYQxMiqoFPQtgE9OjyD2lcbbaIz39Rk",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:2636/test",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"test"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ActualizarUsuario",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2E2ZTJkOWVmMDI2Y2E4ZjNiMjdmMGYiLCJ1c2VybmFtZSI6ImFsbDEiLCJuYW1lIjoiZGllZ28iLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNzM4OTkwMzE3LCJleHAiOjE3MzkwMDExMTd9.9xfQg7xpGpokoKSIwHtqoxQO-Vd4lFHEWLFb52Gq5e8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "alas101",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "franc100@gmail.com",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2636/v1/user/67a6e2d9ef026ca8f3b27f0f",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"v1",
+								"user",
+								"67a6e2d9ef026ca8f3b27f0f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ActualizarContraseña",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2E2ZTJkOWVmMDI2Y2E4ZjNiMjdmMGYiLCJ1c2VybmFtZSI6ImFsbDEiLCJuYW1lIjoiZGllZ28iLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNzM4OTkwMzE3LCJleHAiOjE3MzkwMDExMTd9.9xfQg7xpGpokoKSIwHtqoxQO-Vd4lFHEWLFb52Gq5e8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "oldPassword",
+									"value": "1789ASD/m",
+									"type": "text"
+								},
+								{
+									"key": "newPassword",
+									"value": "1789ASD/l",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2636/v1/user/pass/67a6e2d9ef026ca8f3b27f0f",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"v1",
+								"user",
+								"pass",
+								"67a6e2d9ef026ca8f3b27f0f"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Appointment agregar",
+			"item": [
+				{
+					"name": "Agregar Cita",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2E2ZTJkOWVmMDI2Y2E4ZjNiMjdmMGYiLCJ1c2VybmFtZSI6ImFsbDEiLCJuYW1lIjoiZGllZ28iLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNzM4OTkwMzE3LCJleHAiOjE3MzkwMDExMTd9.9xfQg7xpGpokoKSIwHtqoxQO-Vd4lFHEWLFb52Gq5e8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "date",
+									"value": "2025-01-01",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "pendiente",
+									"type": "text"
+								},
+								{
+									"key": "animal",
+									"value": "67a6e197ef026ca8f3b27eff",
+									"type": "text"
+								},
+								{
+									"key": "client",
+									"value": "67a6e2d9ef026ca8f3b27f0f",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2636/v1/cita/",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"v1",
+								"cita",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
