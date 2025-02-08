@@ -144,6 +144,8 @@ export const updatePassword = async (req, res) => {
     )
     } catch (err) {
         console.error(err)
-        return res.status(500).send({ message: 'General error with update password function', err })
+        return res.status(500).send(
+            { message: 'General error with update password function', err }
+        )
     }
 }

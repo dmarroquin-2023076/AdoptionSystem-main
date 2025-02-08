@@ -1,5 +1,9 @@
 import { Router } from "express"
-import { save, getAll, getId, update, deleteAnimal } from  '../animal/animal.controller.js'
+import { save, 
+            getAll,
+            getId, 
+            update, 
+            deleteAnimal } from  '../animal/animal.controller.js'
 
 const api = Router()
 
